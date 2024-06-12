@@ -1,0 +1,277 @@
+//cards
+.cards {
+  background: rgb(250, 250, 250);
+  padding-bottom: 60px;
+}
+
+.cards__list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cards__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(146, 146, 146);
+  border-radius: 14px;
+  color: rgb(146, 146, 146);
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  padding: 8px 0px;
+  max-width: 120px;
+  width: 100%;
+  margin: 0 auto;
+}
+.cards__list__tables {
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+}
+.cards__box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-top: 23px;
+  margin-bottom: 41px;
+}
+
+.cards__card {
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.container__list {
+  margin: 0 auto;
+  max-width: 836px;
+  width: 100%;
+}
+
+.cards__tables__img,
+.cards__list__img {
+  cursor: pointer;
+}
+.cards__tables__img:hover path,
+.cards__list__img:hover path {
+  stroke: rgb(0, 41, 79);
+}
+.active path {
+  stroke: rgb(61, 142, 218);
+}
+.tables {
+  display: none;
+}
+//card
+
+.card__info {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  gap: 200px;
+}
+.card__today {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.card__date {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.card__item {
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.card__likesAndComents {
+  display: flex;
+}
+
+.card__likes {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card__infoDate {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+//likes
+.likes__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.likes__text {
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.cards__vector {
+  position: absolute;
+  right: 0;
+  bottom: -200px;
+  max-width: 250px;
+  width: 100%;
+}
+
+@media (max-width: 1350px) {
+  .cards__vector {
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .cards__vector {
+    max-width: 120px;
+  }
+  .container__list {
+    max-width: 700px;
+  }
+  .card__info {
+    gap: 150px;
+  }
+}
+@media (max-width: 940px) {
+  .cards__vector {
+    max-width: 120px;
+  }
+  .container__list {
+    max-width: 600px;
+  }
+  .card__info {
+    gap: 100px;
+  }
+}
+@media (max-width: 840px) {
+  .container__list {
+    max-width: 500px;
+  }
+  .cards__vector {
+    max-width: 100px;
+  }
+  .container__list {
+    max-width: 550px;
+  }
+  .card__info {
+    gap: 90px;
+  }
+  .likes__text {
+    font-size: 12px;
+  }
+  .card__item {
+    font-size: 12px;
+  }
+  .likes__img {
+    width: 15px;
+  }
+}
+@media (max-width: 740px) {
+  .cards__vector {
+    display: none;
+  }
+
+  .cards__list__tables {
+    display: none;
+  }
+  .container__list {
+    max-width: 400px;
+  }
+
+  .card__info {
+    gap: 70px;
+  }
+  .likes__text {
+    font-size: 10px;
+  }
+  .card__item {
+    font-size: 10px;
+  }
+  .likes__img {
+    width: 12px;
+  }
+  .card__info {
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+  }
+  .cards__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .likes__text {
+    font-size: 16px;
+  }
+  .card__item {
+    font-size: 16px;
+  }
+  .likes__img {
+    width: 20px;
+  }
+  .card__today,
+  .card__date,
+  .card__infoDate {
+    align-items: center;
+  }
+
+  .card__img img {
+    width: 150px;
+  }
+  .cards__vector {
+    max-width: 115px;
+  }
+  .card__img {
+    display: flex;
+    align-items: center;
+  }
+  .card__infoDate {
+    margin-bottom: 10px;
+  }
+  .card__today {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 640px) {
+  .card__img img {
+    width: 120px;
+  }
+  .cards__vector {
+    max-width: 115px;
+  }
+  .likes__text {
+    font-size: 14px;
+  }
+  .card__item {
+    font-size: 14px;
+  }
+  .likes__img {
+    width: 12px;
+  }
+  .card__today,
+  .card__date,
+  .card__infoDate {
+    row-gap: 5px;
+  }
+}
+@media (max-width: 450px) {
+  .container__list {
+    max-width: 300px;
+  }
+}

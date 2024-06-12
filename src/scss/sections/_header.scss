@@ -1,0 +1,292 @@
+.header {
+}
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.header__vector {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: 630px;
+  width: 100%;
+}
+.header__logo {
+  position: absolute;
+  z-index: 2;
+  top: 11px;
+  left: 354px;
+  max-width: 140px;
+  max-height: 140px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.header__opacity {
+  position: absolute;
+  max-height: 170px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header__nav {
+  position: relative;
+  padding-top: 33px;
+  z-index: 2;
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+}
+
+.nav__box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav__title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  margin-right: 16px;
+}
+
+.nav__button {
+  color: rgb(61, 142, 218);
+  font-size: 13px;
+  font-weight: 400;
+  padding: 6px 12px;
+  line-height: 15px;
+  letter-spacing: -3%;
+  text-align: left;
+  box-sizing: border-box;
+  border: 1px solid rgb(61, 142, 218);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.nav__button:hover {
+  background-color: rgb(61, 142, 218);
+  color: rgb(222, 239, 255);
+  border: 1px solid rgb(21, 130, 232);
+}
+
+.nav__item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  padding-right: 25px;
+  margin-top: 16px;
+  margin-bottom: 19px;
+}
+.nav__item__span {
+  font-weight: 700;
+}
+.nav__date {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin-right: 10px;
+}
+.nav__calender {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 160px;
+  box-sizing: border-box;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 4px;
+  margin-right: 22px;
+  overflow: hidden;
+}
+
+.date__input {
+  width: 100%;
+  height: 100%;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.date__input:hover {
+  background: rgb(116, 116, 116);
+}
+.date__input::placeholder {
+  color: black;
+}
+
+.calender__box {
+  display: flex;
+}
+.calender__img {
+  background: rgb(250, 250, 250);
+}
+.calender__img__close {
+  border-left: 1px solid rgb(222, 222, 222);
+  cursor: pointer;
+}
+
+.calender__img__calender {
+  cursor: pointer;
+  border-left: 1px solid rgb(222, 222, 222);
+}
+.calender__img__close:hover,
+.calender__img__calender:hover {
+  background: rgb(116, 116, 116);
+}
+
+@media (max-width: 1600px) {
+  .header__vector {
+    max-width: 530px;
+  }
+  .header__logo {
+    left: 254px;
+    max-width: 120px;
+    max-height: 120px;
+  }
+}
+@media (max-width: 1350px) {
+  .header__vector {
+    max-width: 430px;
+  }
+  .header__logo {
+    left: 234px;
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .header__vector {
+    max-width: 350px;
+  }
+  .header__logo {
+    left: 170px;
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .header__vector {
+    max-width: 300px;
+  }
+  .header__logo {
+    left: 150px;
+    max-width: 70px;
+    max-height: 70px;
+  }
+}
+@media (max-width: 940px) {
+  .container {
+    max-width: 300px;
+  }
+}
+@media (max-width: 840px) {
+  .nav__title {
+    font-size: 18px;
+  }
+  .nav__button {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  .nav__item {
+    font-size: 12px;
+  }
+  .nav__item__span {
+    font-weight: 700;
+  }
+  .nav__date {
+    font-size: 12px;
+  }
+  .nav__calender {
+    max-width: 120px;
+  }
+  .date__input {
+    font-size: 10px;
+  }
+  .calender__img__calender {
+    width: 25px;
+  }
+  .header__vector {
+    max-width: 250px;
+  }
+  .header__logo {
+    left: 130px;
+    max-width: 60px;
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 740px) {
+  .nav__box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    margin-bottom: 20px;
+  }
+  .nav__item {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  .nav__button {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .nav__title {
+    font-size: 20px;
+    margin: 0;
+  }
+  .nav__calender {
+    margin: 0;
+  }
+  .nav__date {
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .nav__calender {
+    max-width: 150px;
+  }
+  .date__input {
+    font-size: 16px;
+  }
+}
+@media (max-width: 560px) {
+  .nav__item {
+    font-size: 14px;
+  }
+  .nav__button {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .nav__title {
+    font-size: 16px;
+  }
+  .nav__date {
+    font-size: 14px;
+  }
+  .nav__calender {
+    max-width: 120px;
+  }
+  .date__input {
+    font-size: 14px;
+  }
+  .header__vector {
+    max-width: 500px;
+  }
+  .header__logo {
+    left: 130px;
+    top: 5px;
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .header__nav {
+    padding-top: 100px;
+  }
+  .date__input {
+    font-size: 12px;
+  }
+}
